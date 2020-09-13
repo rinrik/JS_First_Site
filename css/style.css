@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+img {
+  max-width: 100%;
+}
 body {
   background-color: #20202d;
   margin: 0;
@@ -8,6 +11,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 .container {
+  width: 90%;
   max-width: 945px;
   margin: auto;
 }
@@ -294,4 +298,69 @@ body {
   text-decoration-line: underline;
   color: #a5a5a5;
   margin-top: 72px;
+}
+
+/* adaptive deisgn */
+@media (max-width: 850px) {
+  .hero-avatar {
+    width: 250px;
+    height: 250px;
+    background-size: 200%;
+    background-position: center -40px;
+    border-width: 10px;
+  }
+  .hero-avatar:active {
+    background-position: center top -200px;
+  }
+  /*features*/
+  .features {
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+  .features-block {
+    justify-content: space-between;
+  }
+  .features-item {
+    flex-basis: 40%;
+  }
+  /*projects*/
+  .projects {
+    padding-bottom: 0;
+  }
+  .projects-slide {
+    flex-direction: column;
+  }
+  .project-image {
+    margin: 0 auto;
+    padding-bottom: 46px;
+  }
+  .project-text {
+    justify-content: space-between 200px;
+  }
+  .project-time,
+  .project-cost {
+    flex-basis: 50%;
+  }
+  /*contacts*/
+  .section {
+    padding-bottom: 16px;
+  }
+  .section-title {
+    margin-bottom: 30px;
+  }
+  .contacts-block {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .contacts-data {
+    flex-direction: column;
+    margin: 0;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    flex-basis: 40%;
+  }
+  .contacts-policy {
+    margin: 0;
+    margin-top: 20px;
+  }
 }
