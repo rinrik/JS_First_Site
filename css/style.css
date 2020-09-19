@@ -301,6 +301,7 @@ body {
 }
 
 /* adaptive deisgn */
+/*850px*/
 @media (max-width: 850px) {
   .hero-avatar {
     width: 250px;
@@ -362,5 +363,54 @@ body {
   .contacts-policy {
     margin: 0;
     margin-top: 20px;
+  }
+}
+@media (max-width: 294px) {
+  .hero {
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+  .hero-header {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+  .logo {
+    margin: 0;
+    margin-bottom: 15px;
+  }
+  .hero-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .hero-avatar {
+    background-size: 270%;
+    background-position: center -60px;
+    border-width: 5px;
+    margin-bottom: 10px;
+  }
+  /*features*/
+  .section-title {
+    text-align: center;
+  }
+  .features-block {
+    display: flex;
+  }
+  .features-item {
+    flex-basis: 100%;
+    padding-right: 0;
+  }
+  /*projects*/
+  .projects {
+    padding-top: 0;
+  }
+  /*contacts*/
+  .section {
+    padding-top: 0px;
+  }
+  .contacts-form {
+    max-width: 264px;
+    max-height: 550px;
   }
 }
